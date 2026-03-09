@@ -19,13 +19,12 @@ public class Main {
         objetosPorPagar[2] = new EmpleadoAsalariado("Joshua", "James", 12312, 2400);
         objetosPorPagar[3] = new EmpleadoAsalariado("Yassine", "Rabtaoui", 8274, 1200);
         int deudas = 0;
-        
+
         for (PorPagar p : objetosPorPagar) {
-            if (p instanceof PorPagar) {
-                deudas=deudas+p.Deudas();
-            }
-            
+
+            deudas = deudas + p.Deudas();
+
         }
-        System.out.println("La empresa tiene que pagar " + deudas+" Euros");
+        System.out.println("La empresa tiene que pagar " + deudas + " Euros");
     }
 }
